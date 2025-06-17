@@ -17,6 +17,8 @@ import {
   Lightbulb,
   Target,
 } from "lucide-react";
+import logo from "./img/togela.png";
+import logo_white from "./img/togela_white.jpeg";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -68,8 +70,9 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0 flex items-center">
-              <Settings className="h-8 w-8 text-blue-900 mr-2" />
-              <span className="text-xl font-bold text-blue-900">
+              {/* <Settings className="h-8 w-8 text-blue-900 mr-2" /> */}
+              <img src={logo} alt="Company Logo" className="h-14 w-18 mr-2" />
+              <span className="text-2xl font-bold text-blue-900">
                 Togela LLC
               </span>
             </div>
@@ -350,7 +353,14 @@ function App() {
               },
               {
                 icon: Zap,
-                title: "Material Sourcing",
+                // title: "Material Sourcing",
+                title: (
+                  <>
+                    Material
+                    <br />
+                    Sourcing
+                  </>
+                ),
                 description:
                   "Pipeline materials, Specialty materials, and Chemicals and catalysts.",
               },
@@ -358,7 +368,7 @@ function App() {
                 icon: Wrench,
                 title: "Spare Parts and Maintenance Supplies",
                 description:
-                  "OEM-certified spare parts, Inventory management, Customs clearance and Expedited delivery services.",
+                  "OEM-certified spare parts, Customs clearance and Expedited delivery services.",
               },
               {
                 icon: Target,
@@ -370,7 +380,7 @@ function App() {
                 icon: Shield,
                 title: "Safety and Environmental Equipment:",
                 description:
-                  "Comprehensive safety systems, PPE, environmental remediation equipment, and compliance consulting for hazardous environments.",
+                  "Comprehensive safety systems, PPE, environmental remediation equipment, and compliance for hazardous environments.",
               },
               {
                 icon: Lightbulb,
@@ -421,7 +431,14 @@ function App() {
             {[
               {
                 icon: Award,
-                title: "Proven Expertise",
+                // title: "<br> Proven Expertise",
+                title: (
+                  <>
+                    Proven
+                    <br />
+                    Expertise
+                  </>
+                ),
                 description:
                   "40+ years of industry experience with a track record of successful project delivery across diverse sectors.",
               },
@@ -433,9 +450,17 @@ function App() {
               },
               {
                 icon: Zap,
-                title: "Tendering and Bid Evaluation",
+                // title: "Tendering and <br> Bid Evaluation",
+                title: (
+                  <>
+                    Tendering
+                    <br />
+                    Bid Evaluation
+                  </>
+                ),
                 description:
-                  "Preparation of clear and comprehensive tender documents to attract the best suppliers. Thorough bid evaluations, considering technical, commercial, and qualitative factors.",
+                  // "Preparation of clear and comprehensive tender documents to attract the best suppliers. Thorough bid evaluations, considering technical, commercial, and qualitative factors.",
+                  "Thorough bid evaluations, considering technical, commercial, and qualitative factors.",
               },
               {
                 icon: Shield,
@@ -733,8 +758,13 @@ function App() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center mb-4">
-                <Settings className="h-8 w-8 text-yellow-400 mr-2" />
-                <span className="text-xl font-bold">Togela LLC</span>
+                {/* <Settings className="h-8 w-8 text-yellow-400 mr-2" /> */}
+                <img
+                  src={logo_white}
+                  alt="Company Logo"
+                  className="h-14 w-18 mr-2"
+                />
+                <span className="text-2xl font-bold">Togela LLC</span>
               </div>
               <p className="text-blue-100 leading-relaxed">
                 Your trusted partner for innovative engineering solutions that
